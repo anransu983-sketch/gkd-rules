@@ -294,7 +294,7 @@ export default defineGkdApp({
       key: 15,
       name: '分段广告-小程序-12306',
       desc: '关闭12306小程序界面的推广广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
       rules: [
         {
@@ -338,7 +338,7 @@ export default defineGkdApp({
       key: 17,
       name: '分段广告-出行扫码广告',
       desc: '关闭扫码出行页面的推广广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds:
         'com.alipay.android.phone.wallet.aptrip.ui.activity.result.ResultPageActivityV2',
@@ -385,7 +385,7 @@ export default defineGkdApp({
       key: 19,
       name: '分段广告-服务消息页面卡片广告',
       desc: '关闭服务消息页面的卡片广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.alipay.android.phone.messageboxapp.ui.MsgBoxTabActivity',
@@ -415,7 +415,7 @@ export default defineGkdApp({
       key: 20,
       name: '全屏广告-弹窗广告',
       desc: '关闭全屏弹窗广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -549,7 +549,7 @@ export default defineGkdApp({
     {
       key: 23,
       name: '局部广告-底部横幅广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.AlipayLogin',
       rules: [
@@ -602,7 +602,7 @@ export default defineGkdApp({
     {
       key: 26,
       name: '全屏广告-小程序-12306',
-      enable: false,
+      enable: true,
       activityIds: 'com.alipay.mobile.nebulax.xriver.activity.XRiverActivity',
       rules: [
         {

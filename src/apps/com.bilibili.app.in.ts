@@ -53,7 +53,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '局部广告-APP评分',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',

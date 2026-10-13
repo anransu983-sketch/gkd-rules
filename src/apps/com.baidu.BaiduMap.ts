@@ -74,7 +74,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 6,
       name: '打车界面-弹窗广告',
       fastQuery: true,
@@ -126,7 +126,7 @@ export default defineGkdApp({
     {
       key: 10,
       name: '局部广告-各类局部广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 1,
@@ -176,7 +176,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '全屏广告-各类弹窗广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -257,7 +257,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '局部广告-地图上方黄页横幅',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
@@ -274,7 +274,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '局部广告-打车界面-右侧悬浮球',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
@@ -283,7 +283,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '全屏广告-美食大礼包弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
@@ -292,7 +292,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '全屏广告-酒店提前订弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
@@ -328,7 +328,7 @@ export default defineGkdApp({
     {
       key: 19,
       name: '全屏广告-打车界面-弹窗广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
@@ -364,7 +364,7 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-通勤卡-添加至桌面',
       desc: '点击取消',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       fastQuery: true,
       rules: [

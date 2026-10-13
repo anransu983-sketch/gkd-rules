@@ -191,7 +191,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '局部广告-首页-右侧红包浮窗',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       matchTime: 20000,
@@ -233,7 +233,7 @@ export default defineGkdApp({
       key: 16,
       name: '全屏广告-周末开红包',
       desc: '点击 X',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       forcedTime: 20000,
@@ -254,7 +254,7 @@ export default defineGkdApp({
       key: 17,
       name: '全屏广告-书城-广告弹窗',
       desc: '【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -319,7 +319,7 @@ export default defineGkdApp({
       key: 20,
       name: '局部广告-阅读-卡片广告',
       desc: '点击X',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.reader.ui.ReaderActivity',
       rules: [
@@ -390,7 +390,7 @@ export default defineGkdApp({
       key: 21,
       name: '全屏广告-阅读-视频广告',
       desc: '点击【关闭】/【反馈-不感兴趣】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         '.reader.ui.ReaderActivity',
@@ -448,7 +448,7 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-阅读-翻页广告',
       desc: '自动点击右下方空白处翻页，翻页模式【上下】无法使用',
-      enable: false,
+      enable: true,
       forcedTime: 3600000,
       fastQuery: true,
       activityIds: [
@@ -494,7 +494,7 @@ export default defineGkdApp({
       key: 23,
       name: '局部广告-阅读-菜单右侧福利浮窗',
       desc: '点击X',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,

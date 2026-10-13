@@ -117,7 +117,7 @@ export default defineGkdApp({
       key: 7,
       name: '分段广告-首页文档列表广告',
       desc: '关闭首页文档列表中的广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
@@ -148,7 +148,7 @@ export default defineGkdApp({
       key: 8,
       name: '全屏广告-弹窗广告',
       desc: '关闭登录后弹窗和体验会员提示弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -185,7 +185,7 @@ export default defineGkdApp({
       key: 9,
       name: '全屏广告-关闭[开启WPS云服务]弹窗',
       desc: '自动点击不开启',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.cloud.roaming.login.core.QingLoginActivity',
@@ -213,7 +213,7 @@ export default defineGkdApp({
       key: 10,
       name: '分段广告-文档末尾广告',
       desc: '关闭文档末尾的广告内容',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'cn.wps.moffice.writer.multiactivity.Writer',
       rules: [
@@ -234,7 +234,7 @@ export default defineGkdApp({
       key: 11,
       name: '局部广告',
       desc: '关闭各类局部广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 1,
@@ -272,7 +272,7 @@ export default defineGkdApp({
     {
       key: 12,
       name: '局部广告-首页-文档列表广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.StartPublicActivity',
@@ -305,7 +305,7 @@ export default defineGkdApp({
     {
       key: 13,
       name: '全屏广告-首页-弹窗广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'cn.wps.moffice.main.AfterLoginActivity',
@@ -333,7 +333,7 @@ export default defineGkdApp({
       key: 15,
       name: '全屏广告-开启WPS云服务',
       desc: '自动点击不开启',
-      enable: false,
+      enable: true,
       activityIds: [
         'cn.wps.moffice.main.cloud.roaming.login.core.QingLoginActivity',
         'com.tencent.mm.plugin.webview.ui.tools.SDKOAuthUI',
@@ -358,7 +358,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '局部广告-文档末尾广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: ['cn.wps.moffice.writer.multiactivity.Writer'],
       rules: [
@@ -379,7 +379,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '局部广告-首页-底部广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',

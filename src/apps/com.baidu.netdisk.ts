@@ -124,7 +124,7 @@ export default defineGkdApp({
       key: 12,
       name: '全屏广告-活动弹窗',
       desc: '关闭各种活动弹窗信息',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -149,7 +149,7 @@ export default defineGkdApp({
       key: 13,
       name: '局部广告-各类局部广告',
       desc: '关闭各类局部广告，包括续费横幅、悬浮广告卡片等',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -203,7 +203,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '全屏广告-首页banner广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
@@ -212,7 +212,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '全屏广告-首页热门广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
@@ -222,7 +222,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '全屏广告-我的页面-限时福利',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: '@TextView + [text="专属福利"]',
@@ -231,7 +231,7 @@ export default defineGkdApp({
     {
       key: 18,
       name: '全屏广告-相册页面-激活无限空间弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds:
         'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
@@ -253,7 +253,7 @@ export default defineGkdApp({
       key: 20,
       name: '全屏广告-续费横幅提示',
       desc: '关闭续费横幅提示',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
@@ -277,7 +277,7 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
@@ -288,7 +288,7 @@ export default defineGkdApp({
       key: 23,
       name: '全屏广告-幸运券包弹窗',
       desc: '自动点击关闭',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [

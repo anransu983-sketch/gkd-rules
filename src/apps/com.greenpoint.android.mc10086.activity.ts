@@ -87,7 +87,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '全屏广告-首页弹窗广告',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       matchTime: 10000,
@@ -104,7 +104,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '局部广告-右侧悬浮小图标',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -147,7 +147,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '全屏广告-首页广告弹窗',
-      enable: false,
+      enable: true,
       activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
       rules: [
         {
@@ -198,7 +198,7 @@ export default defineGkdApp({
     {
       key: 20,
       name: '全屏广告-请求好评弹窗',
-      enable: false,
+      enable: true,
       activityIds: ['com.mc10086.cmcc.view.tabs.AppTabFragment'],
       rules: [
         {
