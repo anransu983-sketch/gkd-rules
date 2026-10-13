@@ -1,0 +1,29 @@
+import { defineGkdApp } from '@gkd-kit/define';
+export default defineGkdApp({
+id: 'com.qq.ac.android',
+name: '腾讯动漫',
+groups: [
+{
+key: 0,
+name: '青少年模式',
+enable: false,
+activityIds: ['com.qq.ac.android.main.MainActivity'],
+actionMaximum: 1,
+resetMatch: 'app',
+rules: '[text="青少年守护模式"] - [id="com.qq.ac.android:id/close_btn"]',
+snapshotUrls: [
+'https://i.gkd.li/import/12707752',
+'https://i.gkd.li/import/13195636',
+],
+},
+{
+key: 1,
+name: '局部广告-漫画阅读页面-左侧悬浮广告',
+enable: true,
+activityIds: 'com.qq.ac.android.reader.comic.ComicReaderActivity',
+rules:
+'[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
+snapshotUrls: ['https://i.gkd.li/import/12707756'],
+},
+],
+});
