@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '网易云音乐',
   groups: [
     {
-      enable: false,
+      enable: true,
       key: 1,
       name: '分段广告',
       desc: '有二次确认弹窗',
@@ -193,7 +193,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 7,
       name: '播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',
@@ -280,7 +280,7 @@ export default defineGkdApp({
       key: 12,
       name: '分段广告-卡片广告',
       desc: '点击[关闭]-点击[直接关闭]/[不感兴趣]；搜索页规则触发时会收起输入法',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -363,7 +363,7 @@ export default defineGkdApp({
       key: 13,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -383,7 +383,7 @@ export default defineGkdApp({
     {
       key: 14,
       name: '全屏广告-弹窗广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
       rules: [
         {
@@ -410,7 +410,7 @@ export default defineGkdApp({
       key: 15,
       name: '全屏广告-VIP弹窗',
       desc: '点击关闭VIP类弹窗广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -467,7 +467,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '局部广告-我的页面-中间滚动广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: ['com.netease.cloudmusic.activity.MainActivity'],
       rules:
@@ -486,7 +486,7 @@ export default defineGkdApp({
     {
       key: 19,
       name: '全屏广告-VIP 弹窗',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       matchTime: 10000,
@@ -561,7 +561,7 @@ export default defineGkdApp({
       key: 21,
       name: '局部广告-播放界面广告',
       desc: '右上角VIP小悬浮、巨幅卡片式广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.netease.cloudmusic.activity.PlayerActivity',
       rules: [
@@ -588,7 +588,7 @@ export default defineGkdApp({
       key: 22,
       name: '局部广告-发现-顶部视频广告',
       desc: '自动点击跳过。',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -612,7 +612,7 @@ export default defineGkdApp({
     {
       key: 24,
       name: '全屏广告-功能升级弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,

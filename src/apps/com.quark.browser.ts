@@ -56,7 +56,7 @@ export default defineGkdApp({
     {
       key: 5,
       name: '局部广告-小说阅读页面底部广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.ucpro.BrowserActivity',
       rules: [
         '[id=`com.quark.browser:id/tv_close_ad`][text=`关闭广告`]',
@@ -67,7 +67,7 @@ export default defineGkdApp({
       key: 6,
       name: '全屏广告-设置默认浏览器提示',
       desc: '点击取消',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       fastQuery: true,
       activityIds: 'com.ucpro.BrowserActivity',
@@ -77,7 +77,7 @@ export default defineGkdApp({
     {
       key: 7,
       name: '全屏广告-弹窗广告',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       fastQuery: true,
       activityIds: 'com.ucpro.BrowserActivity',

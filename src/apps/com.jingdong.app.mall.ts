@@ -13,7 +13,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/12642266',
     },
     {
-      enable: false,
+      enable: true,
       key: 2,
       name: '我的界面-悬浮广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -38,7 +38,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 3,
       name: '首页-右侧浮层广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -116,7 +116,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 6,
       name: '首页-底部横幅广告',
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
@@ -178,7 +178,7 @@ export default defineGkdApp({
       key: 13,
       name: '局部广告-悬浮广告',
       desc: '关闭首页悬浮广告、参与调研提示、红包弹窗和购物车砸金蛋',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -280,7 +280,7 @@ export default defineGkdApp({
     {
       key: 15,
       name: '全屏广告-广告弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -322,7 +322,7 @@ export default defineGkdApp({
       key: 16,
       name: '局部广告-横幅广告',
       desc: '关闭页面顶部横幅广告和吸顶广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -457,7 +457,7 @@ export default defineGkdApp({
     {
       key: 21,
       name: '全屏广告-购物车界面-砸金蛋',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: '[id="com.jd.lib.cart.feature:id/iv_egg_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12642266',
@@ -465,7 +465,7 @@ export default defineGkdApp({
     {
       key: 22,
       name: '局部广告-我的界面-悬浮广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: [
         {
@@ -490,7 +490,7 @@ export default defineGkdApp({
     {
       key: 23,
       name: '局部广告-首页-右侧浮层广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: 'RelativeLayout >n * > [desc^="关闭浮层"]',
       snapshotUrls: [
@@ -528,7 +528,7 @@ export default defineGkdApp({
     {
       key: 25,
       name: '局部广告-首页-底部横幅广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.jingdong.app.mall.MainFrameActivity',
       rules: 'ImageView < FrameLayout - FrameLayout > ImageView[desc="关闭"]',
       snapshotUrls: [

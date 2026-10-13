@@ -44,7 +44,7 @@ export default defineGkdApp({
       key: 3,
       name: '局部广告-卡片广告',
       desc: '关闭帖子底部的推荐关注卡片',
-      enable: false,
+      enable: true,
       rules: [
         {
           name: '收藏帖子后底部推荐关注卡片',

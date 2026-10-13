@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      enable: false,
+      enable: true,
       name: '信息流广告',
       desc: '但是步骤较多, 影响app使用',
       fastQuery: true,
@@ -51,7 +51,7 @@ export default defineGkdApp({
       key: 2,
       name: '分段广告-信息流广告',
       desc: '但是步骤较多, 影响app使用',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
       rules: [
@@ -118,7 +118,7 @@ export default defineGkdApp({
       key: 4,
       name: '局部广告-信息流广告',
       desc: '但是步骤较多, 影响app使用',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
       rules: [

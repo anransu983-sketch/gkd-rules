@@ -216,7 +216,7 @@ export default defineGkdApp({
     {
       key: 17,
       name: '分段广告-关闭用户推荐',
-      enable: false,
+      enable: true,
       rules: [
         {
           matches:
@@ -253,7 +253,7 @@ export default defineGkdApp({
     {
       key: 18,
       name: '全屏广告-关闭朋友推荐弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: ['com.ss.android.ugc.aweme.main.MainActivity'],
       rules: '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme:id/close"]',
@@ -279,7 +279,7 @@ export default defineGkdApp({
     {
       key: 20,
       name: '局部广告-首页左上角广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules:
         'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
@@ -288,7 +288,7 @@ export default defineGkdApp({
     {
       key: 21,
       name: '全屏广告-广告弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
@@ -298,7 +298,7 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-去商店评分',
       desc: '点击[取消]',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -312,7 +312,7 @@ export default defineGkdApp({
       key: 23,
       name: '全屏广告-设置无声进入抖音',
       desc: '点击[拒绝]',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="拒绝"] + [text="去设置"]',
@@ -358,7 +358,7 @@ export default defineGkdApp({
     {
       key: 26,
       name: '全屏广告-休息提醒',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -401,7 +401,7 @@ export default defineGkdApp({
     {
       key: 28,
       name: '全屏广告-视频播放中途插入的打招呼界面',
-      enable: false,
+      enable: true,
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
       snapshotUrls: 'https://i.gkd.li/import/13379307',
@@ -410,7 +410,7 @@ export default defineGkdApp({
       key: 29,
       name: '全屏广告-关闭商城推荐',
       desc: '点击【不感兴趣】',
-      enable: false,
+      enable: true,
       rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
       snapshotUrls: 'https://i.gkd.li/import/13800207',
     },
