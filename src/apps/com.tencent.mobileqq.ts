@@ -29,7 +29,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 1,
       name: '消息页面-顶部广告',
       desc: '规则误触,待修复,需要快照准确定位',
@@ -62,7 +62,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 2,
       name: '分段广告-好友动态-广告卡片',
       rules: [
@@ -149,7 +149,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 4,
       name: '顶部SVIP广告',
       desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
@@ -274,7 +274,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 12,
       name: 'QQ小世界评论区广告',
       desc: '点击广告-弹出原因框-关闭此条广告',
@@ -409,7 +409,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 20,
       name: '钱包-卡片广告',
       fastQuery: true,
@@ -447,7 +447,7 @@ export default defineGkdApp({
       key: 22,
       name: '局部广告',
       desc: '关闭各页面局部广告，包括消息、聊天、联系人、好友动态等页面',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -570,7 +570,7 @@ export default defineGkdApp({
       key: 23,
       name: '分段广告-广告卡片菜单',
       desc: '通过广告卡片菜单关闭好友动态、小世界评论区和钱包场景中的广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -710,7 +710,7 @@ export default defineGkdApp({
       key: 24,
       name: '全屏广告-弹窗广告',
       desc: '关闭各种场景下的全屏弹窗广告，包括频道页面、钱包页面、黄钻页面等',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -837,7 +837,7 @@ export default defineGkdApp({
       key: 26,
       name: '分段广告-动态页[好友热播/为你推荐]',
       desc: '点击并关闭好友热播和推荐内容',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
@@ -960,7 +960,7 @@ export default defineGkdApp({
       key: 29,
       name: '局部广告-浮窗广告',
       desc: '关闭等级规则页和频道页的浮窗广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
       rules: [
         {
@@ -1032,7 +1032,7 @@ export default defineGkdApp({
       key: 32,
       name: '全屏广告-QQ小程序开屏广告',
       desc: '点击右下角跳过',
-      enable: false,
+      enable: true,
       activityIds: [
         'com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI',
         'com.tencent.mobileqq.activity.miniaio.MiniChatActivity',
@@ -1052,7 +1052,7 @@ export default defineGkdApp({
       key: 33,
       name: '分段广告-天气页卡片广告',
       desc: '点击关闭-点击关闭此条广告',
-      enable: false,
+      enable: true,
       activityIds: [
         'com.tencent.mobileqq.activity.QPublicFragmentActivity',
         'com.tencent.mobileqq.activity.QQBrowserActivity',
@@ -1166,7 +1166,7 @@ export default defineGkdApp({
       key: 36,
       name: '全屏广告-个人主页广告',
       desc: '点击关闭',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -1208,7 +1208,7 @@ export default defineGkdApp({
       key: 38,
       name: '分段广告-QQ空间空友爱看',
       desc: '点击卡片右侧[推荐] ②点击[关闭推荐]',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds:
         'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
@@ -1249,7 +1249,7 @@ export default defineGkdApp({
       key: 39,
       name: '局部广告-消息页面-顶部广告',
       desc: '规则误触,待修复,需要快照准确定位',
-      enable: false,
+      enable: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
@@ -1281,7 +1281,7 @@ export default defineGkdApp({
     {
       key: 40,
       name: '局部广告-频道页面广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           name: '弹窗广告',
@@ -1310,7 +1310,7 @@ export default defineGkdApp({
       key: 41,
       name: '局部广告-顶部SVIP广告',
       desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
-      enable: false,
+      enable: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules:
         'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
@@ -1326,7 +1326,7 @@ export default defineGkdApp({
       key: 42,
       name: '局部广告-好友热播',
       desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
-      enable: false,
+      enable: true,
       activityIds: [
         'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
         'com.tencent.mobileqq.activity.SplashActivity',
@@ -1397,7 +1397,7 @@ export default defineGkdApp({
     {
       key: 45,
       name: '局部广告-我的等级-浮窗广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
       rules:
         'TextView[text="QQ等级规则"] + View > TextView[id=null&&text.length=0]',
@@ -1407,7 +1407,7 @@ export default defineGkdApp({
       key: 46,
       name: '局部广告-QQ小世界评论区广告',
       desc: '点击广告-弹出原因框-关闭此条广告',
-      enable: false,
+      enable: true,
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
         'com.tencent.biz.qqcircle.activity.QCircleFolderActivity',
@@ -1430,7 +1430,7 @@ export default defineGkdApp({
     {
       key: 47,
       name: '全屏广告-黄钻-弹窗广告',
-      enable: false,
+      enable: true,
       activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
       rules:
         'TextView[text.length=0&&clickable=true&&visibleToUser=true] + View > Button[text.length=0&&focusable=true]',
@@ -1442,7 +1442,7 @@ export default defineGkdApp({
     {
       key: 48,
       name: '局部广告-好友动态-为你推荐',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.tencent.mobileqq.activity.SplashActivity',
@@ -1472,7 +1472,7 @@ export default defineGkdApp({
     {
       key: 49,
       name: '全屏广告-内测邀请弹窗',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
@@ -1486,7 +1486,7 @@ export default defineGkdApp({
     {
       key: 50,
       name: '全屏广告-钱包-卡片广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
@@ -1506,7 +1506,7 @@ export default defineGkdApp({
     {
       key: 51,
       name: '全屏广告-首页广告弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,

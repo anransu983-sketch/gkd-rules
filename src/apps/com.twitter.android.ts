@@ -171,7 +171,7 @@ export default defineGkdApp({
       key: 6,
       name: '分段广告-主页信息流广告',
       desc: '点击右上角关闭,点击我不喜欢',
-      enable: false,
+      enable: true,
       actionCd: 3000,
       fastQuery: true,
       activityIds: [
@@ -233,7 +233,7 @@ export default defineGkdApp({
       key: 7,
       name: '全屏广告-关闭[开启个性化广告]弹窗',
       desc: '关闭[开启个性化广告]弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           matches:
@@ -299,7 +299,7 @@ export default defineGkdApp({
       key: 10,
       name: '局部广告-信息流广告-主页',
       desc: '点击右上角关闭,点击我不喜欢',
-      enable: false,
+      enable: true,
       actionCd: 3000,
       fastQuery: true,
       activityIds: 'com.twitter.app.main.MainActivity',
@@ -332,7 +332,7 @@ export default defineGkdApp({
       key: 11,
       name: '局部广告-信息流广告-帖子详情页、搜索页',
       desc: '点击右上角关闭,点击屏蔽用户,确认屏蔽.点击[我不喜欢]会返回主页,因此点击[屏蔽]',
-      enable: false,
+      enable: true,
       actionCd: 3000,
       fastQuery: true,
       activityIds: [
@@ -398,7 +398,7 @@ export default defineGkdApp({
       key: 12,
       name: '局部广告-信息流广告-用户资料页',
       desc: '点击右上角关闭,点击我不喜欢',
-      enable: false,
+      enable: true,
       actionCd: 3000,
       fastQuery: true,
       activityIds: ['com.twitter.app.profiles.ProfileActivity'],
