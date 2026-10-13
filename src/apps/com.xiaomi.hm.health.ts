@@ -1,16 +1,16 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.xiaomi.hm.health',
-name: 'Zepp Life',
-groups: [
-{
-key: 0,
-name: '局部广告-首页-底部广告',
-enable: true,
-fastQuery: true,
-activityIds: 'com.xiaomi.hm.health.activity.ChannelMainTabActivity',
-rules: 'ImageView[id="com.xiaomi.hm.health:id/close_icon"]',
-snapshotUrls: 'https://i.gkd.li/import/13695424',
-},
-],
+  id: 'com.xiaomi.hm.health',
+  name: 'Zepp Life',
+  groups: [
+    {
+      key: 0,
+      name: '局部广告-首页-底部广告',
+      enable: true,
+      fastQuery: true,
+      activityIds: 'com.xiaomi.hm.health.activity.ChannelMainTabActivity',
+      rules: 'ImageView[id="com.xiaomi.hm.health:id/close_icon"]',
+      snapshotUrls: 'https://i.gkd.li/import/13695424',
+    },
+  ],
 });

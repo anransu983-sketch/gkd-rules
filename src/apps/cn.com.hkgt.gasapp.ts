@@ -1,16 +1,16 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'cn.com.hkgt.gasapp',
-name: '易捷加油',
-groups: [
-{
-key: 0,
-name: '全屏广告-广告弹窗',
-enable: true,
-fastQuery: true,
-activityIds: 'cn.com.hkgt.gasapp.dialog.BannerDialog',
-rules: 'ImageView[id="cn.com.hkgt.gasapp:id/exit"][clickable=true]',
-snapshotUrls: 'https://i.gkd.li/import/12744270',
-},
-],
+  id: 'cn.com.hkgt.gasapp',
+  name: '易捷加油',
+  groups: [
+    {
+      key: 0,
+      name: '全屏广告-广告弹窗',
+      enable: true,
+      fastQuery: true,
+      activityIds: 'cn.com.hkgt.gasapp.dialog.BannerDialog',
+      rules: 'ImageView[id="cn.com.hkgt.gasapp:id/exit"][clickable=true]',
+      snapshotUrls: 'https://i.gkd.li/import/12744270',
+    },
+  ],
 });

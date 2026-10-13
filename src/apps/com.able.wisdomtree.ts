@@ -1,27 +1,27 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.able.wisdomtree',
-name: '知到',
-groups: [
-{
-key: 0,
-name: '通知提示-消息推送通知',
-desc: '[暂不开启]',
-enable: false,
-fastQuery: true,
-actionMaximum: 1,
-resetMatch: 'app',
-rules: [
-{
-matches:
-'@TextView[id="com.able.wisdomtree:id/negativeButton"][text="暂不开启"] + View + [id="com.able.wisdomtree:id/positiveButton"][text="马上开启"]',
-snapshotUrls: [
-'https://i.gkd.li/import/13458779',
-'https://i.gkd.li/import/13623441',
-'https://i.gkd.li/import/13695447',
-],
-},
-],
-},
-],
+  id: 'com.able.wisdomtree',
+  name: '知到',
+  groups: [
+    {
+      key: 0,
+      name: '通知提示-消息推送通知',
+      desc: '[暂不开启]',
+      enable: false,
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            '@TextView[id="com.able.wisdomtree:id/negativeButton"][text="暂不开启"] + View + [id="com.able.wisdomtree:id/positiveButton"][text="马上开启"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/13458779',
+            'https://i.gkd.li/import/13623441',
+            'https://i.gkd.li/import/13695447',
+          ],
+        },
+      ],
+    },
+  ],
 });

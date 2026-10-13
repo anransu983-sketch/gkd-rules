@@ -1,16 +1,16 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.shinyv.cnr',
-name: '云听',
-groups: [
-{
-key: 0,
-name: '全屏广告-首页广告弹窗',
-enable: true,
-activityIds: 'yt.com.module.home.MainActivity',
-rules:
-'[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',
-snapshotUrls: 'https://i.gkd.li/import/12817933',
-},
-],
+  id: 'com.shinyv.cnr',
+  name: '云听',
+  groups: [
+    {
+      key: 0,
+      name: '全屏广告-首页广告弹窗',
+      enable: true,
+      activityIds: 'yt.com.module.home.MainActivity',
+      rules:
+        '[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/12817933',
+    },
+  ],
 });

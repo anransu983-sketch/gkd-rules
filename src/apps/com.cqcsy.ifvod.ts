@@ -1,17 +1,17 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.cqcsy.ifvod',
-name: '爱壹帆',
-groups: [
-{
-key: 0,
-name: '更新提示',
-enable: false,
-actionMaximum: 1,
-resetMatch: 'app',
-fastQuery: true,
-rules: '@[text="以后再说"] +2 [text="立即更新"]',
-snapshotUrls: 'https://i.gkd.li/import/13798537',
-},
-],
+  id: 'com.cqcsy.ifvod',
+  name: '爱壹帆',
+  groups: [
+    {
+      key: 0,
+      name: '更新提示',
+      enable: false,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      fastQuery: true,
+      rules: '@[text="以后再说"] +2 [text="立即更新"]',
+      snapshotUrls: 'https://i.gkd.li/import/13798537',
+    },
+  ],
 });

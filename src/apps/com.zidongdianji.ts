@@ -1,26 +1,26 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.zidongdianji',
-name: '自动点击器',
-groups: [
-{
-key: 0,
-name: '局部广告-卡片式广告',
-enable: true,
-rules: [
-{
-key: 0,
-activityIds: 'com.bytedance.sdk.openadsdk.core.dislike.ui',
-matches:
-'@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]',
-},
-{
-key: 1,
-activityIds: 'com.autoclicker.clicker.MainActivity',
-matches: 'Image < @View + View > View > [text="广告"]',
-snapshotUrls: 'https://i.gkd.li/import/13761239',
-},
-],
-},
-],
+  id: 'com.zidongdianji',
+  name: '自动点击器',
+  groups: [
+    {
+      key: 0,
+      name: '局部广告-卡片式广告',
+      enable: true,
+      rules: [
+        {
+          key: 0,
+          activityIds: 'com.bytedance.sdk.openadsdk.core.dislike.ui',
+          matches:
+            '@LinearLayout > TextView[id=`com.byted.pangle:id/tt_item_tv`][text=`不感兴趣`]',
+        },
+        {
+          key: 1,
+          activityIds: 'com.autoclicker.clicker.MainActivity',
+          matches: 'Image < @View + View > View > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/import/13761239',
+        },
+      ],
+    },
+  ],
 });

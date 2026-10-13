@@ -1,16 +1,16 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.facetech.konking',
-name: '人民日报',
-groups: [
-{
-key: 0,
-name: '全屏广告-应用内广告弹窗',
-enable: true,
-activityIds:
-'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-rules: '@Image[text=""] < View +n View > View > TextView[text="广告"]',
-snapshotUrls: 'https://i.gkd.li/import/12841081',
-},
-],
+  id: 'com.facetech.konking',
+  name: '人民日报',
+  groups: [
+    {
+      key: 0,
+      name: '全屏广告-应用内广告弹窗',
+      enable: true,
+      activityIds:
+        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+      rules: '@Image[text=""] < View +n View > View > TextView[text="广告"]',
+      snapshotUrls: 'https://i.gkd.li/import/12841081',
+    },
+  ],
 });

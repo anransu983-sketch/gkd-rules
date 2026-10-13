@@ -1,49 +1,49 @@
 import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
-id: 'com.zzw.october',
-name: '志愿汇',
-groups: [
-{
-key: 0,
-name: '全屏广告-我的',
-enable: true,
-fastQuery: true,
-activityIds: 'com.zzw.october.MainActivity',
-rules: [
-{
-matches:
-'FrameLayout[childCount=5] > FrameLayout > ImageView[text=null]',
-snapshotUrls: 'https://i.gkd.li/import/14661569',
-},
-{
-matches:
-'@ImageView < FrameLayout[id="com.zzw.october:id/fl_close"] < [id="com.zzw.october:id/dialog_root"]',
-snapshotUrls: 'https://i.gkd.li/i/32597470',
-},
-],
-},
-{
-key: 1,
-name: '全屏广告-主页广告',
-enable: true,
-activityIds: 'com.zzw.october.MainActivity',
-fastQuery: true,
-rules: [
-{
-key: 1,
-matches:
-'[id="com.zzw.october:id/interact_ad_root"] >n ImageView[id="com.zzw.october:id/iv_close"]',
-snapshotUrls: [
-'https://i.gkd.li/import/12842675',
-'https://i.gkd.li/import/12869369',
-],
-},
-{
-matches:
-'@ImageView < FrameLayout - FrameLayout > TextView[text="进入小程序"] - FrameLayout > [text="上滑或点击按钮查看详情"]',
-snapshotUrls: 'https://i.gkd.li/i/32597173',
-},
-],
-},
-],
+  id: 'com.zzw.october',
+  name: '志愿汇',
+  groups: [
+    {
+      key: 0,
+      name: '全屏广告-我的',
+      enable: true,
+      fastQuery: true,
+      activityIds: 'com.zzw.october.MainActivity',
+      rules: [
+        {
+          matches:
+            'FrameLayout[childCount=5] > FrameLayout > ImageView[text=null]',
+          snapshotUrls: 'https://i.gkd.li/import/14661569',
+        },
+        {
+          matches:
+            '@ImageView < FrameLayout[id="com.zzw.october:id/fl_close"] < [id="com.zzw.october:id/dialog_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/32597470',
+        },
+      ],
+    },
+    {
+      key: 1,
+      name: '全屏广告-主页广告',
+      enable: true,
+      activityIds: 'com.zzw.october.MainActivity',
+      fastQuery: true,
+      rules: [
+        {
+          key: 1,
+          matches:
+            '[id="com.zzw.october:id/interact_ad_root"] >n ImageView[id="com.zzw.october:id/iv_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/import/12842675',
+            'https://i.gkd.li/import/12869369',
+          ],
+        },
+        {
+          matches:
+            '@ImageView < FrameLayout - FrameLayout > TextView[text="进入小程序"] - FrameLayout > [text="上滑或点击按钮查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/32597173',
+        },
+      ],
+    },
+  ],
 });
