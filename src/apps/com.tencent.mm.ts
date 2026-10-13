@@ -5,7 +5,7 @@ export default defineGkdApp({
   name: '微信',
   groups: [
     {
-      enable: false,
+      enable: true,
       key: 0,
       name: '分段广告-朋友圈广告',
       desc: '点击广告卡片右上角广告,直接关闭/出现菜单,确认关闭',
@@ -58,7 +58,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 12,
       name: '分段广告-朋友圈广告[英文]',
       desc: '点击广告卡片右上角[Sponsored],直接关闭/出现菜单点击[Close the ad],确认关闭',
@@ -220,7 +220,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 6,
       name: '分段广告-订阅号文章广告',
       desc: '⚠ 此规则有概率误触。自动点击关闭按钮，必须同时启用【订阅号文章广告反馈】规则',
@@ -278,7 +278,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 8,
       name: '分段广告-订阅号文章广告反馈',
       desc: '⚠ 此规则有概率误触。自动点击反馈理由，配合【订阅号文章广告】规则使用',
@@ -362,7 +362,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/import/12793745',
     },
     {
-      enable: false,
+      enable: true,
       key: 13,
       name: '全屏广告-提瓦特助手小程序-弹窗广告',
       activityIds: 'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
@@ -386,7 +386,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 14,
       name: '分段广告-小程序-内部广告',
       activityIds: ['com.tencent.mm.plugin.appbrand.ui.AppBrandUI'],
@@ -427,7 +427,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 16,
       name: '全屏广告-小程序-京东购物',
       desc: '低价包邮广告',
@@ -704,7 +704,7 @@ export default defineGkdApp({
       key: 24,
       name: '全屏广告-小程序部分通用广告',
       desc: '包括部分开屏广告，弹窗广告等',
-      enable: false,
+      enable: true,
       matchTime: 10000,
       activityIds: [
         'com.tencent.mm.plugin.appbrand.ui.AppBrandUI',
@@ -780,7 +780,7 @@ export default defineGkdApp({
       key: 25,
       name: '分段广告-订阅号消息页面广告',
       desc: '自动点击“x”',
-      enable: false,
+      enable: true,
       activityIds: [
         '.plugin.brandservice.ui.flutter.BizFlutterTLFlutterViewActivity',
       ],

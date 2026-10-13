@@ -223,7 +223,7 @@ export default defineGkdApp({
       key: 17,
       name: '全屏广告-弹窗广告',
       desc: '关闭各种全屏弹窗广告，包括会员促销、活动邀请等',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 1,
@@ -396,7 +396,7 @@ export default defineGkdApp({
       key: 18,
       name: '局部广告-悬浮/卡片/横幅广告',
       desc: '关闭各种悬浮/卡片/横幅广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -559,7 +559,7 @@ export default defineGkdApp({
       key: 22,
       name: '全屏广告-花呗相关弹窗',
       desc: '关闭花呗升级及征信授权相关弹窗',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -620,7 +620,7 @@ export default defineGkdApp({
     {
       key: 25,
       name: '全屏广告-限时福利弹窗',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -658,7 +658,7 @@ export default defineGkdApp({
     {
       key: 26,
       name: '局部广告-消息页面-热门活动卡片',
-      enable: false,
+      enable: true,
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: 'View[desc.length>0] +2n FrameLayout > TextView[text="퀺"]',
       snapshotUrls: [
@@ -669,7 +669,7 @@ export default defineGkdApp({
     {
       key: 27,
       name: '局部广告-悬浮广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 0,
@@ -706,7 +706,7 @@ export default defineGkdApp({
       key: 29,
       name: '全屏广告-各级页面-添加到首页弹窗',
       desc: '自动点击退出',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: [
         'com.taobao.themis.container.app.TMSActivity',
@@ -721,7 +721,7 @@ export default defineGkdApp({
     {
       key: 30,
       name: '全屏广告-视频页面-活动弹窗',
-      enable: false,
+      enable: true,
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules:
         'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
@@ -749,7 +749,7 @@ export default defineGkdApp({
       key: 33,
       name: '全屏广告-将小组件添加到手机桌面',
       desc: '点击取消',
-      enable: false,
+      enable: true,
       activityIds: 'com.alibaba.triver.container.TriverMainActivity',
       rules: [
         {
