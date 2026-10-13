@@ -9,7 +9,7 @@ export default defineGkdApp({
       enable: false,
       name: '信息流广告',
       desc: '但是步骤较多, 影响app使用',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.instagram.mainactivity.InstagramMainActivity',
       rules: [
         {

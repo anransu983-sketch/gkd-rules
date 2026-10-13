@@ -3,13 +3,12 @@ import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
   id: 'com.baidu.netdisk',
   name: '百度网盘',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 1,
       name: '活动弹窗',
       desc: '关闭各种活动弹窗信息',
-      quickFind: true,
+      fastQuery: true,
       rules: [
         {
           key: 1,
@@ -33,7 +32,7 @@ export default defineGkdApp({
       key: 2,
       name: '首页banner广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '[id="com.baidu.netdisk:id/banner_item_close"]',
       snapshotUrls: 'https://i.gkd.li/import/12706544',
     },
@@ -41,7 +40,7 @@ export default defineGkdApp({
       key: 3,
       name: '首页热门广告',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules:
         '[id="com.baidu.netdisk:id/vf_content"] + [id="com.baidu.netdisk:id/close"]',
       snapshotUrls: 'https://i.gkd.li/import/12706544',
@@ -50,14 +49,14 @@ export default defineGkdApp({
       key: 4,
       name: '我的页面-限时福利',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
-      quickFind: true,
+      fastQuery: true,
       rules: '@TextView + [text="专属福利"]',
       snapshotUrls: 'https://i.gkd.li/import/12706549',
     },
     {
       key: 5,
       name: '相册页面-激活无限空间弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds:
         'com.baidu.netdisk.cloudimage.ui.album.AlbumGuideOneImageDialog',
       rules:
@@ -67,7 +66,7 @@ export default defineGkdApp({
     {
       key: 6,
       name: '更新弹窗',
-      quickFind: true,
+      fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: '[text="立即更新"] -n [text="下次再说"]', //使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
@@ -77,7 +76,7 @@ export default defineGkdApp({
       key: 7,
       name: '续费横幅提示',
       desc: '关闭续费横幅提示',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: [
         {
@@ -91,7 +90,7 @@ export default defineGkdApp({
       key: 8,
       name: '开启消息通知弹窗',
       desc: '自动点击关闭',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]', //单独使用ID会导致误触（例如删除确认https://i.gkd.li/import/13069049）
       snapshotUrls: ['https://i.gkd.li/import/12923936'],
@@ -101,7 +100,7 @@ export default defineGkdApp({
       key: 10,
       name: '看视频免费享极速下载弹窗',
       desc: '自动点击x按钮',
-      quickFind: true,
+      fastQuery: true,
       activityIds: 'com.baidu.netdisk.ui.MainActivity',
       rules:
         'ViewGroup > [id="com.baidu.netdisk:id/background_image"] +n [id="com.baidu.netdisk:id/iv_close"]',
@@ -109,7 +108,7 @@ export default defineGkdApp({
     },
     {
       key: 11,
-      quickFind: true,
+      fastQuery: true,
       name: '幸运券包弹窗',
       desc: '自动点击关闭',
       activityIds: 'com.baidu.netdisk.ui.MainActivity',

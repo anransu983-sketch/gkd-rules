@@ -3,7 +3,6 @@ import { defineGkdApp} from '@gkd-kit/define';
 export default defineGkdApp({
 id: 'com.dragon.read',
 name: '番茄免费小说',
-deprecatedKeys: [-1, 11],
 groups: [
 {
 key: 0,
@@ -34,7 +33,7 @@ snapshotUrls: [
 },
 {
 key: 3,
-quickFind: true,
+fastQuery: true,
 matches:
 '[id="com.dragon.read:id/layout_banner_ad_bg"] > [id="com.dragon.read:id/close_button"]',
 snapshotUrls: 'https://i.gkd.li/import/13520314',
@@ -46,7 +45,7 @@ key: 1,
 name: '更新弹窗',
 actionMaximum: 1,
 resetMatch: 'app',
-quickFind: true,
+fastQuery: true,
 rules: '@[text="以后再说"] + [text="优先体验"]',
 snapshotUrls: 'https://i.gkd.li/import/12716477',
 },
@@ -76,7 +75,7 @@ rules: [
 key: 0,
 name: '电商惊喜券',
 activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
-quickFind: true,
+fastQuery: true,
 matches:
 '@LynxFlattenUI[id=null][text=""][clickable=true] - [text="去逛商城"] -4 [text$="电商惊喜券"]',
 snapshotUrls: 'https://i.gkd.li/import/12910159',
@@ -84,7 +83,7 @@ snapshotUrls: 'https://i.gkd.li/import/12910159',
 {
 key: 1,
 name: '爆款好物一分购',
-quickFind: true,
+fastQuery: true,
 activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
 matches:
 '@ImageView[clickable=true] <2 LinearLayout[childCount=2] < [id="android:id/content"][childCount=1]',
@@ -95,7 +94,7 @@ snapshotUrls: 'https://i.gkd.li/import/12878266',
 {
 key: 4,
 name: '阅读页面_关注作者',
-quickFind: true,
+fastQuery: true,
 rules: [
 {
 key: 0,
@@ -108,7 +107,7 @@ snapshotUrls: 'https://i.gkd.li/import/13399505',
 {
 key: 5,
 name: '分段广告',
-quickFind: true,
+fastQuery: true,
 rules: [
 {
 key: 0,
@@ -150,7 +149,7 @@ snapshotUrls: 'https://i.gkd.li/import/13816453',
 {
 preKeys: 3,
 key: 4,
-name: '阅读页面广告弹窗-点击不感兴趣',
+name: '阅读页面广告弹窗-点击不感兴趣2',
 activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
 matches: '[text="举报"] <2 ViewGroup - ViewGroup[clickable=true]',
 snapshotUrls: 'https://i.gkd.li/import/13816454',
@@ -170,7 +169,7 @@ snapshotUrls: 'https://i.gkd.li/import/12716592',
 key: 12,
 name: '关闭阅读-全屏广告',
 desc: '点击右上角',
-quickFind: true,
+fastQuery: true,
 activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
 rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
 snapshotUrls: 'https://i.gkd.li/import/13191156',

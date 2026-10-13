@@ -3,7 +3,6 @@ import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
   id: 'cmb.pb',
   name: '招商银行',
-  deprecatedKeys: [0],
   groups: [
     {
       key: 10,
@@ -16,7 +15,7 @@ export default defineGkdApp({
     {
       key: 11,
       name: '定位提示-请求定位权限弹窗',
-      quickFind: true,
+      fastQuery: true,
       activityIds: [
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
         'cmb.pb.app.search.PBSearchWebActivity',
