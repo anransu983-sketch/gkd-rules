@@ -208,5 +208,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '开屏广告-跳过按钮',
+      desc: '开屏广告右上角倒计时跳过按钮(vid=video_time_skip)',
+      enable: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      matchTime: 10000,
+      fastQuery: true,
+      rules: [
+        {
+          matches: '[vid="video_time_skip"]',
+        },
+      ],
+    },
   ],
 });
