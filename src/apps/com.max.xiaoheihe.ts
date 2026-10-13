@@ -12,10 +12,13 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          matches: ['[text="签到成功!"]', '[id="com.max.xiaoheihe:id/tv_confirm"]'],
-          snapshotUrls: 'https://i.gkd.li/import/13421535'
-        }
-      ]
+          matches: [
+            '[text="签到成功!"]',
+            '[id="com.max.xiaoheihe:id/tv_confirm"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13421535',
+        },
+      ],
     },
     {
       key: 2,
@@ -30,9 +33,12 @@ export default defineGkdApp({
         {
           action: 'back',
           matches: '[text*="签到成功"][text.length<10]',
-          snapshotUrls: ['https://i.gkd.li/import/13421535', 'https://i.gkd.li/i/15048252']
-        }
-      ]
+          snapshotUrls: [
+            'https://i.gkd.li/import/13421535',
+            'https://i.gkd.li/i/15048252',
+          ],
+        },
+      ],
     },
     {
       key: 3,
@@ -43,11 +49,12 @@ export default defineGkdApp({
         {
           name: '收藏帖子后底部推荐关注卡片',
           matches: '[vid="iv_notify_close"]',
-          activityIds: 'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
+          activityIds:
+            'com.max.xiaoheihe.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/14914139'
-        }
-      ]
+          snapshotUrls: 'https://i.gkd.li/i/14914139',
+        },
+      ],
     },
     {
       key: 4,
@@ -59,7 +66,7 @@ export default defineGkdApp({
         '.module.bbs.post.ui.activitys.WebNewsPostPageActivity',
         '.module.bbs.post.ui.activitys.PicturePostPageActivity',
         '.module.bbs.post.ui.activitys.v2.PicturePostPageActivityV2',
-        '.module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2'
+        '.module.bbs.post.ui.activitys.v2.WebNewsPostPageActivityV2',
       ],
       rules: [
         {
@@ -68,11 +75,11 @@ export default defineGkdApp({
             'https://i.gkd.li/i/16646832',
             'https://i.gkd.li/i/17574462',
             'https://i.gkd.li/i/25336815',
-            'https://i.gkd.li/i/30749472'
+            'https://i.gkd.li/i/30749472',
           ],
-          excludeSnapshotUrls: 'https://i.gkd.li/i/22377026'
-        }
-      ]
+          excludeSnapshotUrls: 'https://i.gkd.li/i/22377026',
+        },
+      ],
     },
     {
       key: 5,
@@ -83,10 +90,13 @@ export default defineGkdApp({
       fastQuery: true,
       rules: [
         {
-          matches: ['[text="签到成功!"]', '[id="com.max.xiaoheihe:id/tv_confirm"]'],
-          snapshotUrls: 'https://i.gkd.li/import/13421535'
-        }
-      ]
-    }
-  ]
+          matches: [
+            '[text="签到成功!"]',
+            '[id="com.max.xiaoheihe:id/tv_confirm"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/import/13421535',
+        },
+      ],
+    },
+  ],
 });

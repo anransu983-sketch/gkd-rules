@@ -7,9 +7,10 @@ export default defineGkdApp({
     {
       key: 10,
       name: '朝朝宝-广告弹窗',
-      activityIds: 'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
+      activityIds:
+        'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706022'
+      snapshotUrls: 'https://i.gkd.li/import/12706022',
     },
     {
       key: 11,
@@ -17,14 +18,15 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
-        'cmb.pb.app.search.PBSearchWebActivity'
+        'cmb.pb.app.search.PBSearchWebActivity',
       ],
-      rules: '@[id="cmb.pb:id/ivDelete"][desc="关闭"] - FrameLayout > [id="cmb.pb:id/tvDescription"][text*="获取您的位置"]',
+      rules:
+        '@[id="cmb.pb:id/ivDelete"][desc="关闭"] - FrameLayout > [id="cmb.pb:id/tvDescription"][text*="获取您的位置"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12706029',
         'https://i.gkd.li/import/13248893',
-        'https://i.gkd.li/import/13897345'
-      ]
+        'https://i.gkd.li/import/13897345',
+      ],
     },
     {
       key: 12,
@@ -33,7 +35,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: '.app.h5container.webviewcontainer.PBWebContainerActivity',
       rules: '[id="cover-img"] + [text="关闭推荐"]',
-      snapshotUrls: 'https://i.gkd.li/import/12706022'
+      snapshotUrls: 'https://i.gkd.li/import/12706022',
     },
     {
       key: 13,
@@ -42,14 +44,15 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'cmb.pb.app.h5container.webviewcontainer.PBWebContainerActivity',
-        'cmb.pb.app.search.PBSearchWebActivity'
+        'cmb.pb.app.search.PBSearchWebActivity',
       ],
-      rules: '@[id="cmb.pb:id/ivDelete"][desc="关闭"] - FrameLayout > [id="cmb.pb:id/tvDescription"][text*="获取您的位置"]',
+      rules:
+        '@[id="cmb.pb:id/ivDelete"][desc="关闭"] - FrameLayout > [id="cmb.pb:id/tvDescription"][text*="获取您的位置"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12706029',
         'https://i.gkd.li/import/13248893',
-        'https://i.gkd.li/import/13897345'
-      ]
-    }
-  ]
+        'https://i.gkd.li/import/13897345',
+      ],
+    },
+  ],
 });

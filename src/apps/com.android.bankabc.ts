@@ -16,16 +16,16 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[id="com.android.bankabc:id/close"]',
-          snapshotUrls: 'https://i.gkd.li/i/14179162'
+          snapshotUrls: 'https://i.gkd.li/i/14179162',
         },
         {
           key: 1,
           matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/17879768'
-        }
+          snapshotUrls: 'https://i.gkd.li/i/17879768',
+        },
       ],
       actionMaximumKey: 0,
-      order: -10
+      order: -10,
     },
     {
       key: 1,
@@ -40,21 +40,24 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[vid="upgrade_checkbox"][checked=false]',
-          snapshotUrls: ['https://i.gkd.li/i/14208545', 'https://i.gkd.li/i/16410094']
+          snapshotUrls: [
+            'https://i.gkd.li/i/14208545',
+            'https://i.gkd.li/i/16410094',
+          ],
         },
         {
           key: 1,
           preKeys: [0],
           matches: '[vid="negativeTextView"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14208545'
+          snapshotUrls: 'https://i.gkd.li/i/14208545',
         },
         {
           key: 2,
           preKeys: [0],
           matches: '[vid="iv_negative"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/16410094'
-        }
-      ]
+          snapshotUrls: 'https://i.gkd.li/i/16410094',
+        },
+      ],
     },
     {
       key: 2,
@@ -68,10 +71,10 @@ export default defineGkdApp({
         {
           matches: '[vid="iv_notification_reminder_dialog_close"]',
           activityIds: '.MainActivity',
-          snapshotUrls: 'https://i.gkd.li/i/14208621'
-        }
+          snapshotUrls: 'https://i.gkd.li/i/14208621',
+        },
       ],
-      ignoreGlobalGroupMatch: true
-    }
-  ]
+      ignoreGlobalGroupMatch: true,
+    },
+  ],
 });

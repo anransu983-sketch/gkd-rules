@@ -11,14 +11,14 @@ export default defineGkdApp({
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-        'com.lbe.security.ui.CountdownDialogActivity'
+        'com.lbe.security.ui.CountdownDialogActivity',
       ],
       rules: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12642301',
         'https://i.gkd.li/import/12801465',
-        'https://i.gkd.li/import/12909281'
-      ]
+        'https://i.gkd.li/import/12909281',
+      ],
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
-      snapshotUrls: 'https://i.gkd.li/import/12642307'
+      snapshotUrls: 'https://i.gkd.li/import/12642307',
     },
     {
       enable: false,
@@ -35,7 +35,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12642310'
+      snapshotUrls: 'https://i.gkd.li/import/12642310',
     },
     {
       enable: false,
@@ -44,7 +44,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12642319'
+      snapshotUrls: 'https://i.gkd.li/import/12642319',
     },
     {
       enable: false,
@@ -53,22 +53,25 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'com.baidu.mapframework.widget.BMBaseDialog',
-        'com.baidu.baidumaps.MapsActivity'
+        'com.baidu.baidumaps.MapsActivity',
       ],
       rules: [
         {
-          matches: '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12660884'
+          matches:
+            '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/12660884',
         },
         {
-          matches: '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/12660883'
+          matches:
+            '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/12660883',
         },
         {
-          matches: 'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
-          snapshotUrls: 'https://i.gkd.li/import/12909299'
-        }
-      ]
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/12909299',
+        },
+      ],
     },
     {
       enable: false,
@@ -77,10 +80,14 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity'
+        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
       ],
-      rules: 'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12909300', 'https://i.gkd.li/import/12930699']
+      rules:
+        'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12909300',
+        'https://i.gkd.li/import/12930699',
+      ],
     },
     {
       enable: false,
@@ -89,7 +96,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
-      snapshotUrls: 'https://i.gkd.li/import/12909385'
+      snapshotUrls: 'https://i.gkd.li/import/12909385',
     },
     {
       enable: false,
@@ -97,8 +104,9 @@ export default defineGkdApp({
       name: '打开通知权限',
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13258995'
+      rules:
+        '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13258995',
     },
     {
       enable: false,
@@ -111,9 +119,9 @@ export default defineGkdApp({
         {
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           matches: 'TextView[id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/13439258'
-        }
-      ]
+          snapshotUrls: 'https://i.gkd.li/import/13439258',
+        },
+      ],
     },
     {
       key: 10,
@@ -127,23 +135,24 @@ export default defineGkdApp({
           activityIds: [
             'com.baidu.baidumaps.MapsActivity',
             'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-            'com.lbe.security.ui.CountdownDialogActivity'
+            'com.lbe.security.ui.CountdownDialogActivity',
           ],
           fastQuery: true,
           snapshotUrls: [
             'https://i.gkd.li/i/12642301',
             'https://i.gkd.li/i/12801465',
             'https://i.gkd.li/i/12909281',
-            'https://i.gkd.li/i/24633179'
-          ]
+            'https://i.gkd.li/i/24633179',
+          ],
         },
         {
           key: 2,
           name: '局部广告-打车界面右侧悬浮球',
-          matches: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
+          matches:
+            'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/12642307'
+          snapshotUrls: 'https://i.gkd.li/i/12642307',
         },
         {
           key: 3,
@@ -151,17 +160,18 @@ export default defineGkdApp({
           matches: '[vid="banner_ad_close_icon"][visibleToUser=true]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/22656085'
+          snapshotUrls: 'https://i.gkd.li/i/22656085',
         },
         {
           key: 4,
           name: '路线广告-2',
-          matches: 'ImageView[childCount=0] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] + ViewGroup > [text="广告"]',
+          matches:
+            'ImageView[childCount=0] < @ViewGroup[childCount=1][clickable=true][visibleToUser=true] + ViewGroup > [text="广告"]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/22616267'
-        }
-      ]
+          snapshotUrls: 'https://i.gkd.li/i/22616267',
+        },
+      ],
     },
     {
       key: 11,
@@ -174,7 +184,7 @@ export default defineGkdApp({
           matches: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/12642310'
+          snapshotUrls: 'https://i.gkd.li/i/12642310',
         },
         {
           key: 1,
@@ -182,27 +192,31 @@ export default defineGkdApp({
           matches: '[id="lottie_box"] + TextView[id=null][clickable=true]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/12642319'
+          snapshotUrls: 'https://i.gkd.li/i/12642319',
         },
         {
           key: 2,
           name: '打车界面弹窗广告',
-          matches: 'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
           activityIds: [
             'com.baidu.baidumaps.MapsActivity',
-            'com.android.packageinstaller.permission.ui.GrantPermissionsActivity'
+            'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
           ],
           fastQuery: true,
-          snapshotUrls: ['https://i.gkd.li/i/12909300', 'https://i.gkd.li/i/12930699']
+          snapshotUrls: [
+            'https://i.gkd.li/i/12909300',
+            'https://i.gkd.li/i/12930699',
+          ],
         },
         {
           key: 3,
           matches: '[vid="img_close"][visibleToUser=true]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
           fastQuery: true,
-          snapshotUrls: 'https://i.gkd.li/i/22616256'
-        }
-      ]
+          snapshotUrls: 'https://i.gkd.li/i/22616256',
+        },
+      ],
     },
     {
       key: 12,
@@ -217,10 +231,10 @@ export default defineGkdApp({
         {
           matches: '[vid="push_close"]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
-          snapshotUrls: 'https://i.gkd.li/i/15284736'
-        }
+          snapshotUrls: 'https://i.gkd.li/i/15284736',
+        },
       ],
-      ignoreGlobalGroupMatch: true
+      ignoreGlobalGroupMatch: true,
     },
     {
       key: 13,
@@ -233,9 +247,12 @@ export default defineGkdApp({
         {
           matches: ['[text="添加至桌面"]', '[text="取消"]'],
           activityIds: 'com.baidu.baidumaps.MapsActivity',
-          snapshotUrls: ['https://i.gkd.li/i/13439258', 'https://i.gkd.li/i/16920986']
-        }
-      ]
+          snapshotUrls: [
+            'https://i.gkd.li/i/13439258',
+            'https://i.gkd.li/i/16920986',
+          ],
+        },
+      ],
     },
     {
       key: 14,
@@ -245,14 +262,14 @@ export default defineGkdApp({
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
         'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
-        'com.lbe.security.ui.CountdownDialogActivity'
+        'com.lbe.security.ui.CountdownDialogActivity',
       ],
       rules: 'ImageView[id="com.baidu.BaiduMap:id/yellow_banner_close"]',
       snapshotUrls: [
         'https://i.gkd.li/import/12642301',
         'https://i.gkd.li/import/12801465',
-        'https://i.gkd.li/import/12909281'
-      ]
+        'https://i.gkd.li/import/12909281',
+      ],
     },
     {
       key: 15,
@@ -261,7 +278,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
-      snapshotUrls: 'https://i.gkd.li/import/12642307'
+      snapshotUrls: 'https://i.gkd.li/import/12642307',
     },
     {
       key: 16,
@@ -270,7 +287,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12642310'
+      snapshotUrls: 'https://i.gkd.li/import/12642310',
     },
     {
       key: 17,
@@ -279,7 +296,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/import/12642319'
+      snapshotUrls: 'https://i.gkd.li/import/12642319',
     },
     {
       key: 18,
@@ -288,22 +305,25 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'com.baidu.mapframework.widget.BMBaseDialog',
-        'com.baidu.baidumaps.MapsActivity'
+        'com.baidu.baidumaps.MapsActivity',
       ],
       rules: [
         {
-          matches: '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
-          snapshotUrls: 'https://i.gkd.li/import/12660884'
+          matches:
+            '[text^="开启位置服务"] + RelativeLayout > [id="com.baidu.BaiduMap:id/tv_notip_btn"]',
+          snapshotUrls: 'https://i.gkd.li/import/12660884',
         },
         {
-          matches: '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/import/12660883'
+          matches:
+            '[text="需开启系统定位服务开关"] +2 [id="com.baidu.BaiduMap:id/ll_dialog_btn"] > [id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/import/12660883',
         },
         {
-          matches: 'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
-          snapshotUrls: 'https://i.gkd.li/import/12909299'
-        }
-      ]
+          matches:
+            'ImageView[id="com.baidu.BaiduMap:id/location_dialog_close_iv"]',
+          snapshotUrls: 'https://i.gkd.li/import/12909299',
+        },
+      ],
     },
     {
       key: 19,
@@ -312,10 +332,14 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: [
         'com.baidu.baidumaps.MapsActivity',
-        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity'
+        'com.android.packageinstaller.permission.ui.GrantPermissionsActivity',
       ],
-      rules: 'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
-      snapshotUrls: ['https://i.gkd.li/import/12909300', 'https://i.gkd.li/import/12930699']
+      rules:
+        'ImageView[id="com.baidu.BaiduMap:id/operational_activities_content_close"]',
+      snapshotUrls: [
+        'https://i.gkd.li/import/12909300',
+        'https://i.gkd.li/import/12930699',
+      ],
     },
     {
       key: 20,
@@ -324,7 +348,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
-      snapshotUrls: 'https://i.gkd.li/import/12909385'
+      snapshotUrls: 'https://i.gkd.li/import/12909385',
     },
     {
       key: 21,
@@ -332,8 +356,9 @@ export default defineGkdApp({
       enable: false,
       fastQuery: true,
       activityIds: 'com.baidu.baidumaps.MapsActivity',
-      rules: '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13258995'
+      rules:
+        '[text="打开通知权限"] <n LinearLayout + ImageView[id="com.baidu.BaiduMap:id/push_close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13258995',
     },
     {
       key: 22,
@@ -346,9 +371,9 @@ export default defineGkdApp({
         {
           matches: 'TextView[id="com.baidu.BaiduMap:id/tv_dialog_cancel"]',
           activityIds: 'com.baidu.baidumaps.MapsActivity',
-          snapshotUrls: 'https://i.gkd.li/import/13439258'
-        }
-      ]
-    }
-  ]
+          snapshotUrls: 'https://i.gkd.li/import/13439258',
+        },
+      ],
+    },
+  ],
 });

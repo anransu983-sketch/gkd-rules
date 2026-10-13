@@ -9,8 +9,9 @@ export default defineGkdApp({
       name: '评论区-满意度评价',
       fastQuery: true,
       activityIds: 'com.bilibili.video.story.StoryVideoActivity',
-      rules: '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13115189'
+      rules:
+        '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13115189',
     },
     {
       key: 6,
@@ -18,7 +19,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13180746'
+      snapshotUrls: 'https://i.gkd.li/import/13180746',
     },
     {
       key: 7,
@@ -26,7 +27,7 @@ export default defineGkdApp({
       desc: '点击【暂不开启】',
       fastQuery: true,
       rules: '[text="订阅感兴趣的通知"] +2 LinearLayout [text="暂不开启"]',
-      snapshotUrls: 'https://i.gkd.li/import/13399195'
+      snapshotUrls: 'https://i.gkd.li/import/13399195',
     },
     {
       key: 8,
@@ -35,8 +36,9 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      rules: '[text="打开推送通知"] +2 LinearLayout > [id="com.bilibili.app.in:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13600976'
+      rules:
+        '[text="打开推送通知"] +2 LinearLayout > [id="com.bilibili.app.in:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13600976',
     },
     {
       key: 9,
@@ -44,8 +46,9 @@ export default defineGkdApp({
       enable: false,
       fastQuery: true,
       activityIds: 'com.bilibili.video.story.StoryVideoActivity',
-      rules: '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13115189'
+      rules:
+        '[text="对当前的评论区满意吗？"] + [id="com.bilibili.app.in:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13115189',
     },
     {
       key: 10,
@@ -54,7 +57,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
       rules: '[id="com.bilibili.app.in:id/cancel"][text="下次再说"]',
-      snapshotUrls: 'https://i.gkd.li/import/13180746'
+      snapshotUrls: 'https://i.gkd.li/import/13180746',
     },
     {
       key: 11,
@@ -63,7 +66,7 @@ export default defineGkdApp({
       enable: false,
       fastQuery: true,
       rules: '[text="订阅感兴趣的通知"] +2 LinearLayout [text="暂不开启"]',
-      snapshotUrls: 'https://i.gkd.li/import/13399195'
+      snapshotUrls: 'https://i.gkd.li/import/13399195',
     },
     {
       key: 12,
@@ -73,8 +76,9 @@ export default defineGkdApp({
       actionMaximum: 1,
       matchTime: 10000,
       fastQuery: true,
-      rules: '[text="打开推送通知"] +2 LinearLayout > [id="com.bilibili.app.in:id/close"]',
-      snapshotUrls: 'https://i.gkd.li/import/13600976'
-    }
-  ]
+      rules:
+        '[text="打开推送通知"] +2 LinearLayout > [id="com.bilibili.app.in:id/close"]',
+      snapshotUrls: 'https://i.gkd.li/import/13600976',
+    },
+  ],
 });
