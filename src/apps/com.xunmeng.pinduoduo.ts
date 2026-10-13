@@ -111,7 +111,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 5,
       name: '全屏广告-多多买菜抽奖弹窗',
       activityIds: ['com.xunmeng.pinduoduo.activity.NewPageActivity'],
@@ -182,7 +182,7 @@ export default defineGkdApp({
       ],
     },
     {
-      enable: false,
+      enable: true,
       key: 10,
       name: '多多视频-划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
@@ -253,7 +253,7 @@ export default defineGkdApp({
       key: 14,
       name: '全屏广告',
       desc: '关闭活动、红包及下单后出现的各类全屏弹窗广告',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 3,
@@ -381,7 +381,7 @@ export default defineGkdApp({
       key: 15,
       name: '局部广告-悬浮广告',
       desc: '关闭各种悬浮广告',
-      enable: false,
+      enable: true,
       activityIds: '.ui.activity.HomeActivity',
       rules: [
         {
@@ -413,7 +413,7 @@ export default defineGkdApp({
     {
       key: 16,
       name: '局部广告-商品详情页视频讲解窗口',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.activity.NewPageActivity',
       rules:
@@ -454,7 +454,7 @@ export default defineGkdApp({
       key: 18,
       name: '全屏广告-多多视频划到广告自动跳过',
       desc: '点击返回自动刷新，从而跳过广告',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.ui.activity.HomeActivity',
       rules: [
@@ -537,7 +537,7 @@ export default defineGkdApp({
       key: 21,
       name: '全屏广告-[个性化推荐]弹窗',
       desc: '点击[取消]',
-      enable: false,
+      enable: true,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
@@ -567,7 +567,7 @@ export default defineGkdApp({
       key: 23,
       name: '局部广告-多多视频',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.ui.activity.HomeActivity',
       rules: [
@@ -589,7 +589,7 @@ export default defineGkdApp({
       key: 24,
       name: '全屏广告-优惠卷弹窗',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -622,7 +622,7 @@ export default defineGkdApp({
       key: 25,
       name: '全屏广告-免单活动',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: '.activity.NewPageActivity',
       rules: [
@@ -646,7 +646,7 @@ export default defineGkdApp({
       key: 26,
       name: '全屏广告-红包',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
@@ -669,7 +669,7 @@ export default defineGkdApp({
       key: 27,
       name: '全屏广告-下单成功',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       rules: [
         {
@@ -708,7 +708,7 @@ export default defineGkdApp({
       key: 29,
       name: '全屏广告-爆款限时直降',
       desc: '点击【X】',
-      enable: false,
+      enable: true,
       fastQuery: true,
       activityIds: 'com.xunmeng.pinduoduo.ui.activity.HomeActivity',
       rules: [
